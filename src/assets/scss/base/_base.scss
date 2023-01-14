@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+* {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var.$scrollbar-background;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var.$scrollbar-default;
+    border-radius: 14px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: var.$scrollbar-hover;
+  }
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: var.$background-color;
+  color: var.$white;
+}

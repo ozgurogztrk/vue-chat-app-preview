@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+input {
+  background: var.$input-background;
+  color: var.$white;
+  border-radius: 14px;
+  padding: fnc.em(14);
+  border: none;
+  transition: outline 0.2s;
+
+  &:focus-visible {
+    outline: var.$input-focus solid 2px;
+  }
+
+  &::placeholder {
+    color: var.$input-placeholder;
+  }
+
+  &::-ms-reveal {
+    filter: invert(100%);
+  }
+}

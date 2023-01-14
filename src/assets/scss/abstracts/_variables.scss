@@ -1,0 +1,55 @@
+/**
+* Base
+*/
+
+$background-color: hsl(0, 0%, 0%);
+$background-dark: hsl(230, 16%, 7%);
+// $background-dark-shadow: hsl(0, 0%, 90%);
+$white: hsl(0, 0%, 100%);
+
+/**
+* Scrollbar
+*/
+
+$scrollbar-background: hsl(240, 10%, 15%);
+$scrollbar-default: hsl(240, 10%, 30%);
+$scrollbar-hover: hsl(240, 10%, 33%);
+
+/**
+* Button
+*/
+
+$button-primary: hsl(216, 100%, 50%);
+$button-primary-hover: hsl(216, 100%, 53%);
+$button-primary-active: hsl(216, 100%, 47%);
+
+$button-success: hsl(153, 74%, 54%);
+$button-success-hover: hsl(154, 77%, 41%);
+$button-success-active: hsl(154, 93%, 30%);
+
+$button-warning: hsl(40, 94%, 68%);
+$button-warning-hover: hsl(40, 87%, 55%);
+$button-warning-active: hsl(40, 99%, 45%);
+
+$button-danger: hsl(11, 87%, 67%);
+$button-danger-hover: hsl(10, 78%, 54%);
+$button-danger-active: hsl(11, 94%, 44%);
+
+$button-navigation-icon: hsl(240, 3%, 47%);
+$button-navigation-background: hsl(240, 10%, 15%);
+$button-navigation-background-active: hsl(216, 99%, 50%);
+
+/**
+* Form
+*/
+
+$input-background: hsl(240, 10%, 15%);
+$input-focus: hsl(216, 99%, 50%);
+$input-placeholder: hsl(240, 3%, 47%);
+
+/**
+* Chat
+*/
+
+$message-background: hsl(240, 10%, 15%);
+$date-text: hsl(240, 3%, 47%);

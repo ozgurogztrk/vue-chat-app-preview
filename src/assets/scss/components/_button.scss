@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+.button {
+  display: inline-block;
+  padding: fnc.em(14);
+  border: none;
+  border-radius: 14px;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  color: var.$white;
+  cursor: pointer;
+
+  &.primary {
+    background-color: var.$button-primary;
+
+    &:hover {
+      background-color: var.$button-primary-hover;
+    }
+
+    &:active {
+      background-color: var.$button-primary-active;
+    }
+  }
+
+  &.success {
+    background-color: var.$button-success;
+
+    &:hover {
+      background-color: var.$button-success-hover;
+    }
+
+    &:active {
+      background-color: var.$button-success-active;
+    }
+  }
+
+  &.warning {
+    background-color: var.$button-warning;
+
+    &:hover {
+      background-color: var.$button-warning-hover;
+    }
+
+    &:active {
+      background-color: var.$button-warning-active;
+    }
+  }
+
+  &.danger {
+    background-color: var.$button-danger;
+
+    &:hover {
+      background-color: var.$button-danger-hover;
+    }
+
+    &:active {
+      background-color: var.$button-danger-active;
+    }
+  }
+}
+
+.button-navigation {
+  display: inline-block;
+  padding: fnc.em(14);
+  border: none;
+  border-radius: 14px;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  background: var.$button-navigation-background;
+  color: var.$button-navigation-icon;
+  cursor: pointer;
+
+  &.active {
+    background-color: var.$button-navigation-background-active;
+    color: var.$white;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+p {
+  background-color: var.$message-background;
+  color: var.$white;
+  padding: fnc.em(14);
+  margin: fnc.em(14);
+  border-radius: 14px;
+  width: 400px;
+}
+
+.username {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid var.$white;
+  padding-bottom: fnc.em(4.8);
+  margin-bottom: fnc.em(4.8);
+  text-align: center;
+  font-size: fnc.rem(18);
+}
+
+.date {
+  font-size: fnc.rem(14);
+  color: var.$date-text;
+}
+
+#chat-box {
+  scroll-behavior: smooth;
+}

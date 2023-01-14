@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+.card {
+  margin: fnc.em(10);
+  padding: fnc.em(16);
+  width: 100%;
+  max-width: 640px;
+  background-color: var.$background-dark;
+  border-radius: 14px;
+  // box-shadow: 0 5px 10px var.$background-dark-shadow;
+
+  &.card-main {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    // width: 100%;
+    max-width: 340px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    // width: 100%;
+    max-width: 260px !important;
+  }
+}

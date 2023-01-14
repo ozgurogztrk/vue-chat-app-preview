@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.link-light {
+  color: var.$white;
+  text-decoration: none;
+}
+
+.link-dark {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.gap {
+  gap: 40px;
+}
+
+.gap-sm {
+  gap: 20px;
+}
+
+.gap-column {
+  column-gap: 40px;
+}
+
+.gap-column-sm {
+  column-gap: 20px;
+}
+
+.gap-row {
+  row-gap: 40px;
+}
+
+.mr-16 {
+  margin-right: fnc.em(16);
+}
+
+.mt-16 {
+  margin-top: fnc.em(16);
+}
+
+.overflow-auto {
+  overflow: auto;
+}
